@@ -1,0 +1,93 @@
+<html>
+<title>
+Search Home | Py Search Engine
+</title>
+<head>
+<meta name="author" content="Yerneni Bhaskar Teja" />
+<meta name="description" content="Search Engine" />
+<meta name="keywords" content="Query,Results,Search,Python" />
+<meta http-equiv="Content-Type" content="text/html" />
+<style type="text/css">
+img.image { border-color:#ffffff }
+input.query 
+{ border-width:thin;
+  border-color:#000000;
+  border-style:solid;
+  background: url('custom_search.gif') no-repeat scroll left center;
+}
+input.submit
+{ border-width:thin;
+  border-color:#000000;
+  border-style:solid;
+}
+table.header
+{
+table-layout:auto
+}
+</style>
+<script type="text/javascript">
+function load()
+{
+window.document.getElementById("query").style.backgroundImage="none";
+window.document.getElementById("query").style.border="thin solid #94e4e8";
+return 0
+}
+function unloading()
+{
+x=window.document.getElementById("query").value;
+if (x=="")
+{
+window.document.getElementById("query").style.backgroundImage="url('custom_search.gif')";
+window.document.getElementById("query").style.border="thin solid #000000";
+}
+}
+</script>
+</head>
+<body>
+<table border=0 align=center cellpadding=0 width=100% height=100%>
+<tr><td valign=top>
+	<table border=0 width=100% class="header"><tr>
+    	<td align=left width=15%><a href="main.html">Search Home</a></td>
+     	<td align=left width=10%><a href="aboutse.html">About</a></td>
+	<td align=left width=75%><a href="http://www.orkut.co.in/Main#Community.aspx?cmm=87161974&refresh=1" target="_blank">Community</a></td></tr>
+	<tr><td colspan=3><hr color="#94e4e8" noshade></td></tr>
+	</table>
+	
+    </td>
+</tr>
+<tr>
+    <td height=192 align=center alt="search engine" title="Developed by Yerneni" style="background: url('webbotfinal.gif') no-repeat scroll center center"></td>
+</tr>
+<tr>
+    <form action="querying.py" method="get">
+    <td align=center>
+    <input type="text" size=45 name="query" id="query" class="query" maxlength=2048 title="web search" onfocus="load()" onblur="unloading()">
+    </td>
+</tr>
+<tr>
+    <td align=center valign="top"><input type="submit" value="Search &raquo;" class="submit" title="Search">
+    </form>
+    </td>
+</tr>
+<tr>
+        <td align=center><ul><li>Search over >1400 web pages on vrsiddhartha.ac.in domain</li></ul></td>
+</tr>
+
+<tr><td valign="bottom">
+<table border=0 valign="bottom" width=100%>
+<tr><td align="left">
+<a href="aboutse.html"><img src="about.gif" alt="about this project" class="image" title="Click here"></a></td>
+<td align="right">
+<table border=0><tr>
+<td><a href="http://python.org"><img src="python.gif" alt="python" class="image"></a></td>
+<td><a href="http://httpd.apache.org"><img src="apache.gif" alt="apache" class="image"></a></td>
+<td><a href="http://gimp.org"><img src="gimp.gif" alt="gimp" class="image"></a></td>
+<td><a href="http://vim.org"<img src="vim.gif" alt="vim" class="image"></a></td>
+<td><a href="http://opensource.org"><img src="opensource.gif" alt="opensource" class="image"></a></td>
+</tr><table>
+</td></tr>
+<table>
+</td></tr></table>
+
+</body>
+</html>

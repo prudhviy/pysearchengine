@@ -1,0 +1,28 @@
+step 1:
+(a)Download the python2.6 compiler for windows appropriate for the processor -> www.python.org/download/
+   install it ...
+(b)If it is installed in C:/Python26 folder..set that folder path to PATH variable 
+   in environment varibles(mycomputer properties)
+(c)Unzip the 'se.zip'(which contains project code..html..images) file and place the 'se' folder on the 
+   apache root folder
+step 2:
+(a)Edit the httpd.conf file of apache server
+Look for the apache's root folder(C:/apache/htdocs) <Directory> line
+   <Directory "/apache/htdocs">
+   AllowOverride None
+   Options +ExecCGI
+   Order allow,deny
+   Allow from all
+   AddHandler cgi-script .cgi .py
+   </Directory>
+add the above lines to it in httpd.conf file (some lines already exists...be carefull)
+step 3:
+run the search engine project as frequently as the web pages content is changed...
+just open the command prompt ....change into 'se' folder(mostly C:/apache/htdocs/se)...
+give the command #python regex1.py  (if the command not found error occurs...that means you have not set the PATH variable)
+
+
+Usefull websites:
+	http://www.python.org
+	http://www.imladris.com/Scripts/PythonForWindows.html
+	http://gudsearchengine.blogspot.com/
