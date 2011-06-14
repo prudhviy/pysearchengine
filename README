@@ -1,0 +1,9 @@
+Search engine based on term frequency and inverse document frequency formulas
+and Information Retrival algorithms.
+Features:
+* web crawling for a given domain
+* tokenizing the corpus
+* stemming algorithms
+* eliminating stop words
+* indexing the corpus
+* ranking based on tf-idf formulas
